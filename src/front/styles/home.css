@@ -5,3 +5,34 @@
     one more css for each page that will contain the selected used 
     on that page only (the ones not reused in other pages).
 */
+.image {
+  position: relative;
+  height: 100vh;
+}
+.content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100vh;
+  position: absolute;
+}
+.center {
+  display: grid;
+  align-content: center; /* aligns vertically */
+  justify-content: center;
+  color: white;
+}
+.textbox {
+  background-color: #273fa4;
+  align-items: center;
+}
+.rocket {
+  width: 255px;
+  height: auto;
+}
+.links {
+  text-decoration: none;
+  color: white;
+  font: 1em sans-serif;
+}
