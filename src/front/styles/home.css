@@ -24,7 +24,7 @@
   color: white;
 }
 .textbox {
-  background-color: #273fa4;
+  background-color: #ff9047;
   align-items: center;
 }
 .rocket {
@@ -35,4 +35,15 @@
   text-decoration: none;
   color: white;
   font: 1em sans-serif;
+}
+.centerMars {
+  display: grid;
+  align-content: center; /* aligns vertically */
+  justify-content: center;
+  color: black;
+}
+button1 {
+  display: grid;
+  align-content: center; /* aligns vertically */
+  justify-content: center;
 }

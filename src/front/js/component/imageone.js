@@ -8,7 +8,7 @@ import { Navbar } from "./navbar";
 export const ImageOne = () => {
 	return (
 
-		<Parallax className="image" blur={0} bgImage={image1} bgImageAlt="the cat" strength={200}>
+		<Parallax className="image" blur={0} bgImage={image1} bgImageAlt="the cat" strength={400}>
 			<div className="align-baseline">
 				<a className="links m-2">rockets</a>
 				<a className="links m-2">satelites</a>

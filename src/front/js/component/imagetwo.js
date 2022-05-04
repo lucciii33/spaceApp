@@ -7,18 +7,24 @@ import rocket from "../../img/rocket1.png";
 
 export const ImageTwo = () => {
 	return (
-		<Parallax className="image" blur={0} bgImage={image2} bgImageAlt="the cat" strength={200}>
+		<Parallax className="image" blur={0} bgImage={image2} bgImageAlt="the cat" strength={400}>
 			<div className="content">
 				<img src=""></img>
-				<div className="center">
+				<div className="centerMars">
 
-					<h1>Are you ready?</h1>
-					<h6>Lets fly to space</h6>
+					<h1>Check all the rocket that spacex created</h1>
+					<h6>you will love it!</h6>
+					<div>
 
+						<button type="button" class="btn btn-outline-light">Light</button>
+					</div>
 				</div>
 			</div>
-			<div>
-				<img className="rocket" src={rocket}></img>
+			<div className="d-flex">
+
+				<div>
+					<img className="rocket" src={rocket}></img>
+				</div>
 			</div>
 		</Parallax>
 	);

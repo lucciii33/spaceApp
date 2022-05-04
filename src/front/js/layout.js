@@ -9,6 +9,8 @@ import injectContext from "./store/appContext";
 import { ImageOne } from "./component/imageone";
 import { ImageTwo } from "./component/imagetwo";
 import { TextBox } from "./component/textbox";
+import { ImageThree } from "./component/imagethree";
+import { ImageFour } from "./component/imagefour";
 
 import { Navbar } from "./component/navbar";
 import { Footer } from "./component/footer";
