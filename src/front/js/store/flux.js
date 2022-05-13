@@ -1,47 +1,65 @@
 const getState = ({ getStore, getActions, setStore }) => {
 	return {
 		store: {
-			message: null,
-			demo: [
-				{
-					title: "FIRST",
-					background: "white",
-					initial: "white"
-				},
-				{
-					title: "SECOND",
-					background: "white",
-					initial: "white"
-				}
-			]
+			rocketsArray: []
 		},
 		actions: {
-			// Use getActions to call a function within a fuction
-			exampleFunction: () => {
-				getActions().changeColor(0, "green");
+			RocketsApi: () => {
+				fetch("https://api.spacexdata.com/v4/rockets", {
+				})
+					.then(response => {
+						return response.json();
+					})
+					.then(data => {
+						console.log(data)
+						return setStore({ rocketsArray: data })
+					})
+					.catch(err => {
+						console.error(err);
+					});
 			},
-
-			getMessage: () => {
-				// fetching data from the backend
-				fetch(process.env.BACKEND_URL + "/api/hello")
-					.then(resp => resp.json())
-					.then(data => setStore({ message: data.message }))
-					.catch(error => console.log("Error loading message from backend", error));
+			MarsOneApi: () => {
+				fetch("https://api.nasa.gov/mars-photos/api/v1/rovers/curiosity/photos?earth_date=2015-6-3&api_key=GUDLbIEDgD2FB42HH5xDfGKwZL2FLPxAiDZkNXT7", {
+				})
+					.then(response => {
+						return response.json();
+					})
+					.then(data => {
+						console.log(data)
+						return setStore({ rocketsArray: data })
+					})
+					.catch(err => {
+						console.error(err);
+					});
 			},
-			changeColor: (index, color) => {
-				//get the store
-				const store = getStore();
-
-				//we have to loop the entire demo array to look for the respective index
-				//and change its color
-				const demo = store.demo.map((elm, i) => {
-					if (i === index) elm.background = color;
-					return elm;
-				});
-
-				//reset the global store
-				setStore({ demo: demo });
-			}
+			MarsTwoApi: () => {
+				fetch("https://api.nasa.gov/mars-photos/api/v1/rovers/Opportunity/photos?earth_date=2016-6-3&api_key=GUDLbIEDgD2FB42HH5xDfGKwZL2FLPxAiDZkNXT7", {
+				})
+					.then(response => {
+						return response.json();
+					})
+					.then(data => {
+						console.log(data)
+						return setStore({ rocketsArray: data })
+					})
+					.catch(err => {
+						console.error(err);
+					});
+			},
+			NasaViewApi: () => {
+				fetch("https://api.nasa.gov/planetary/apod?api_key=dvawnOXxPnsMg6f43vPZlLWnNpP8gg9RdWqX0RKe", {
+				})
+					.then(response => {
+						return response.json();
+					})
+					.then(data => {
+						console.log(data)
+						return setStore({ rocketsArray: data })
+					})
+					.catch(err => {
+						console.error(err);
+					});
+			},
 		}
 	};
 };

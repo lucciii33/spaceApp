@@ -10,13 +10,15 @@ export const ImageTwo = () => {
 		<Parallax className="image" blur={0} bgImage={image2} bgImageAlt="the cat" strength={400}>
 			<div className="content">
 				<img src=""></img>
-				<div className="centerMars">
+				<div className="centerMars2">
 
-					<h1>Check all the rocket that spacex created</h1>
+					<h3>Check all the rocket that spacex created</h3>
 					<h6>you will love it!</h6>
 					<div>
 
-						<button type="button" class="btn btn-outline-light">Light</button>
+						<Link to="/rocketsview">
+							<button type="button" class="btn btn-outline-dark">Light</button>
+						</Link>
 					</div>
 				</div>
 			</div>

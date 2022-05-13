@@ -15,8 +15,11 @@ export const Home = () => {
 	return (
 		<div className="text-center">
 			<ImageOne />
+			<TextBox />
 			<ImageTwo />
+			<TextBox />
 			<ImageThree />
+			<TextBox />
 			<ImageFour />
 		</div>
 	);
