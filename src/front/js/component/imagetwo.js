@@ -7,7 +7,7 @@ import rocket from "../../img/rocket1.png";
 
 export const ImageTwo = () => {
 	return (
-		<Parallax className="image" blur={0} bgImage={image2} bgImageAlt="the cat" strength={400}>
+		<Parallax className="image" blur={0} bgImage={image2} bgImageAlt="the cat" strength={500}>
 			<div className="content">
 				<img src=""></img>
 				<div className="centerMars2">
@@ -21,12 +21,12 @@ export const ImageTwo = () => {
 						</Link>
 					</div>
 				</div>
-			</div>
-			<div className="d-flex">
+				{/* <div className="d-flex">
 
-				<div>
-					<img className="rocket" src={rocket}></img>
-				</div>
+					<div>
+						<img className="rocket" src={rocket}></img>
+					</div>
+				</div> */}
 			</div>
 		</Parallax>
 	);

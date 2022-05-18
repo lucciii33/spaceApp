@@ -13,6 +13,9 @@ import { ImageThree } from "./component/imagethree";
 import { ImageFour } from "./component/imagefour";
 import { RocketCard } from "./component/rocketscard";
 import { rocketsView } from "./pages/rocketsview";
+import { NasaOneImageCard } from "./component/nasaoneimagecard";
+import { NasaOneImageView } from "./pages/nasaoneimageview";
+
 
 import { Navbar } from "./component/navbar";
 import { Footer } from "./component/footer";
@@ -38,6 +41,9 @@ const Layout = () => {
 						</Route>
 						<Route exact path="/rocketsview">
 							<RocketsView />
+						</Route>
+						<Route exact path="/nasaoneimageview">
+							<NasaOneImageView />
 						</Route>
 						<Route exact path="/single/:theid">
 							<Single />

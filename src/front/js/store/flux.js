@@ -1,7 +1,8 @@
 const getState = ({ getStore, getActions, setStore }) => {
 	return {
 		store: {
-			rocketsArray: []
+			rocketsArray: [],
+			nasaOneImageArray: []
 		},
 		actions: {
 			RocketsApi: () => {
@@ -19,7 +20,7 @@ const getState = ({ getStore, getActions, setStore }) => {
 					});
 			},
 			MarsOneApi: () => {
-				fetch("https://api.nasa.gov/mars-photos/api/v1/rovers/curiosity/photos?earth_date=2015-6-3&api_key=GUDLbIEDgD2FB42HH5xDfGKwZL2FLPxAiDZkNXT7", {
+				fetch("https://api.nasa.gov/mars-photos/api/v1/rovers/curiosity/photos?earth_date=2015-6-3&api_key=HxVbXc908Qq8EhgZm1MoVXQ784zCvgyEH6xFU0sh", {
 				})
 					.then(response => {
 						return response.json();
@@ -33,7 +34,7 @@ const getState = ({ getStore, getActions, setStore }) => {
 					});
 			},
 			MarsTwoApi: () => {
-				fetch("https://api.nasa.gov/mars-photos/api/v1/rovers/Opportunity/photos?earth_date=2016-6-3&api_key=GUDLbIEDgD2FB42HH5xDfGKwZL2FLPxAiDZkNXT7", {
+				fetch("https://api.nasa.gov/mars-photos/api/v1/rovers/Opportunity/photos?earth_date=2016-6-3&api_key=HxVbXc908Qq8EhgZm1MoVXQ784zCvgyEH6xFU0sh", {
 				})
 					.then(response => {
 						return response.json();
@@ -47,14 +48,14 @@ const getState = ({ getStore, getActions, setStore }) => {
 					});
 			},
 			NasaViewApi: () => {
-				fetch("https://api.nasa.gov/planetary/apod?api_key=dvawnOXxPnsMg6f43vPZlLWnNpP8gg9RdWqX0RKe", {
+				fetch("https://api.nasa.gov/planetary/apod?api_key=HxVbXc908Qq8EhgZm1MoVXQ784zCvgyEH6xFU0sh", {
 				})
 					.then(response => {
 						return response.json();
 					})
 					.then(data => {
 						console.log(data)
-						return setStore({ rocketsArray: data })
+						return setStore({ nasaOneImageArray: data })
 					})
 					.catch(err => {
 						console.error(err);

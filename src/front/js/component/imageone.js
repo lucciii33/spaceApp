@@ -24,7 +24,7 @@ export const ImageOne = () => {
 					<h6>Lets fly to space</h6>
 					<div>
 
-						<button type="button" class="btn btn-outline-light">Light</button>
+						<Link to="/nasaoneimageview"><button type="button" class="btn btn-outline-light">Light</button></Link>
 					</div>
 
 				</div>
