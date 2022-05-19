@@ -16,7 +16,7 @@ export const ImageTwo = () => {
 					</div>
 				</div>
 			</div> */}
-			<div className="content">
+			<div className="content1">
 				<div className="centerMars2 me-auto m-5">
 
 					<h3>Discover all the rockets that spacex has created.</h3>
