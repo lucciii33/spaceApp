@@ -16,6 +16,11 @@
   width: 100%;
   height: 100vh;
   position: absolute;
+  margin-top: 130px;
+}
+.animation {
+  position: relative;
+  overflow: hidden;
 }
 .centerMars2 {
   display: grid;
@@ -30,7 +35,8 @@
   -webkit-backdrop-filter: blur(5px);
   border: 1px solid rgba(255, 255, 255, 0.3);
   padding: 5px;
-  width: 400px;
+  width: 350px;
+  height: 400px;
 }
 .textbox {
   background-image: url(../img/wave.png);
@@ -38,7 +44,7 @@
   padding: 20px;
 }
 .rocket {
-  width: 255px;
+  width: 200px;
   height: auto;
 }
 .links {
@@ -87,8 +93,8 @@ button1 {
   position: relative;
   width: 24px;
   height: 24px;
-  margin-left: 665px;
-  margin-top: 410px;
+  margin: auto;
+  padding-bottom: 100px;
 }
 
 .chevron {
@@ -113,7 +119,7 @@ button1 {
   content: " ";
   position: absolute;
   top: 0;
-  height: 100%;
+  height: 80%;
   width: 51%;
   background: #fff;
 }

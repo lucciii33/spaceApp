@@ -8,33 +8,39 @@ import { AiOutlineDown } from "react-icons/ai";
 
 export const ImageOne = () => {
 	return (
-
-		<Parallax className="image" blur={0} bgImage={image1} bgImageAlt="the cat" strength={400}>
+		<Parallax className="image" blur={0} bgImage={image1} strength={400}>
 			<div className="align-baseline nav1 mt-2">
 				<a className="links m-2">rockets</a>
 				<a className="links m-2">satelites</a>
 				<a className="links m-2">rockets</a>
 				<a className="links m-2">satelites</a>
 			</div>
-			<div className="content">
+			<div className="d-grid m-0">
+				<div className="content d-grid ">
 
-				<div className="centerMars">
+					<div className="centerMars">
 
-					<h1>Are you ready?</h1>
-					<h6>Lets fly to space</h6>
-					<div>
+						<h1>Are you ready?</h1>
+						<h6>Lets fly to space</h6>
+						<div>
 
-						<Link to="/nasaoneimageview"><button type="button" class="btn btn-outline-light">Light</button></Link>
+							<Link to="/nasaoneimageview"><button type="button" class="btn btn-outline-light">Light</button></Link>
+						</div>
+
 					</div>
-
+					<div class="con1">
+						<div class="chevron"></div>
+						<div class="chevron"></div>
+						<div class="chevron"></div>
+						<span class="text">Scroll down</span>
+					</div> *
+					{/* <div>hi</div> */}
 				</div>
+
 			</div>
-			<div class="con1">
-				<div class="chevron"></div>
-				<div class="chevron"></div>
-				<div class="chevron"></div>
-				<span class="text">Scroll down</span>
-			</div>
+
+
 		</Parallax>
+
 	);
 };

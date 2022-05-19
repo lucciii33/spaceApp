@@ -8,25 +8,27 @@ import rocket from "../../img/rocket1.png";
 export const ImageTwo = () => {
 	return (
 		<Parallax className="image" blur={0} bgImage={image2} bgImageAlt="the cat" strength={500}>
-			<div className="content">
-				<img src=""></img>
-				<div className="centerMars2">
-
-					<h3>Check all the rocket that spacex created</h3>
-					<h6>you will love it!</h6>
-					<div>
-
-						<Link to="/rocketsview">
-							<button type="button" class="btn btn-outline-dark">Light</button>
-						</Link>
-					</div>
-				</div>
-				{/* <div className="d-flex">
+			{/* <div className="animation">
+				<div className="d-flex">
 
 					<div>
 						<img className="rocket" src={rocket}></img>
 					</div>
-				</div> */}
+				</div>
+			</div> */}
+			<div className="content">
+				<div className="centerMars2 me-auto m-5">
+
+					<h3>Discover all the rockets that spacex has created.</h3>
+					<p>SpaceX, in full Space Exploration Technologies Corporation, American aerospace company founded in 2002 that helped usher in the era of commercial spaceflight. It was the first private company to successfully launch and return a spacecraft from Earth orbit and the first to launch a crewed spacecraft and dock it with the International Space Station (ISS). Headquarters are in Hawthorne, California.</p>
+					<div>
+
+						<Link to="/rocketsview">
+							<button type="button" class="btn btn-outline-dark">See Rockets</button>
+						</Link>
+					</div>
+				</div>
+
 			</div>
 		</Parallax>
 	);
