@@ -29,6 +29,13 @@ export const ImageTwo = () => {
 					</div>
 				</div>
 
+				<div className="centerMars3">
+					<h4>See falcons</h4>
+					<p>Discover what they are for</p>
+					<Link to="/dragonsview">
+						<button type="button" class="btn btn-outline-dark">See Dragons</button>
+					</Link>
+				</div>
 			</div>
 		</Parallax>
 	);

@@ -8,12 +8,15 @@ export const ImageThree = () => {
 	return (
 		<Parallax className="image" blur={0} bgImage={image3} bgImageAlt="the cat" strength={600}>
 			<div className="content">
-				<img src=""></img>
-				<div className="centerMars">
 
-					<h1>there is a robot in mars</h1>
-					<h6>here you can see photos taked by the robot </h6>
-					<button type="button" class="btn btn-outline-dark">Light</button>
+				<div className="centerMars5">
+
+					<h1>Trakc Asteroids and satellites.</h1>
+					<p>click below bellow soo you can see the asteroids and salitels around the word in real time</p>
+					<div>
+
+						<Link to="/nasaoneimageview"><button type="button" class="btn btn-outline-dark">Trakcer</button></Link>
+					</div>
 
 				</div>
 			</div>

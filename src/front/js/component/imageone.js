@@ -20,11 +20,11 @@ export const ImageOne = () => {
 
 					<div className="centerMars">
 
-						<h1>Are you ready?</h1>
-						<h6>Lets fly to space</h6>
+						<h1>Astronomy Picture of the Day.</h1>
+						<p>did you know that every day nasa uploads curious facts about what happens today in space</p>
 						<div>
 
-							<Link to="/nasaoneimageview"><button type="button" class="btn btn-outline-light">Light</button></Link>
+							<Link to="/nasaoneimageview"><button type="button" class="btn btn-outline-light">Nasa Facts</button></Link>
 						</div>
 
 					</div>

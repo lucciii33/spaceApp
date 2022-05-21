@@ -2,7 +2,11 @@ const getState = ({ getStore, getActions, setStore }) => {
 	return {
 		store: {
 			rocketsArray: [],
-			nasaOneImageArray: []
+			dragonsArray: [],
+			nasaOneImageArray: [],
+			marsone: [],
+			marstwo: [],
+
 		},
 		actions: {
 			RocketsApi: () => {
@@ -19,6 +23,20 @@ const getState = ({ getStore, getActions, setStore }) => {
 						console.error(err);
 					});
 			},
+			DragonsApi: () => {
+				fetch("https://api.spacexdata.com/v4/dragons", {
+				})
+					.then(response => {
+						return response.json();
+					})
+					.then(data => {
+						console.log(data)
+						return setStore({ dragonsArray: data })
+					})
+					.catch(err => {
+						console.error(err);
+					});
+			},
 			MarsOneApi: () => {
 				fetch("https://api.nasa.gov/mars-photos/api/v1/rovers/curiosity/photos?earth_date=2015-6-3&api_key=HxVbXc908Qq8EhgZm1MoVXQ784zCvgyEH6xFU0sh", {
 				})
@@ -27,7 +45,7 @@ const getState = ({ getStore, getActions, setStore }) => {
 					})
 					.then(data => {
 						console.log(data)
-						return setStore({ rocketsArray: data })
+						return setStore({ marsone: data.photos })
 					})
 					.catch(err => {
 						console.error(err);
@@ -41,7 +59,7 @@ const getState = ({ getStore, getActions, setStore }) => {
 					})
 					.then(data => {
 						console.log(data)
-						return setStore({ rocketsArray: data })
+						return setStore({ marstwo: data.photos })
 					})
 					.catch(err => {
 						console.error(err);

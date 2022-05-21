@@ -15,6 +15,10 @@ import { RocketCard } from "./component/rocketscard";
 import { rocketsView } from "./pages/rocketsview";
 import { NasaOneImageCard } from "./component/nasaoneimagecard";
 import { NasaOneImageView } from "./pages/nasaoneimageview";
+import { DragonsView } from "./pages/dragonsview";
+import { DragonsCard } from "./component/dragonscard";
+import { MarsView } from "./pages/marsview";
+import { TextBoxTwo } from "./component/textboxtwo";
 
 
 import { Navbar } from "./component/navbar";
@@ -39,6 +43,9 @@ const Layout = () => {
 						<Route exact path="/demo">
 							<Demo />
 						</Route>
+						<Route exact path="/marsview">
+							<MarsView />
+						</Route>
 						<Route exact path="/rocketsview">
 							<RocketsView />
 						</Route>
@@ -47,6 +54,9 @@ const Layout = () => {
 						</Route>
 						<Route exact path="/single/:theid">
 							<Single />
+						</Route>
+						<Route exact path="/dragonsview">
+							<DragonsView />
 						</Route>
 						<Route>
 							<h1>Not found!</h1>

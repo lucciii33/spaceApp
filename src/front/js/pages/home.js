@@ -8,6 +8,7 @@ import { ImageTwo } from "../component/imagetwo";
 import { TextBox } from "../component/textbox";
 import { ImageThree } from "../component/imagethree";
 import { ImageFour } from "../component/imagefour";
+import { TextBoxTwo } from "../component/textboxtwo";
 
 export const Home = () => {
 	const { store, actions } = useContext(Context);
@@ -17,10 +18,10 @@ export const Home = () => {
 			<ImageOne />
 			<TextBox />
 			<ImageTwo />
+			<TextBoxTwo />
+			<ImageFour />
 			<TextBox />
 			<ImageThree />
-			<TextBox />
-			<ImageFour />
 		</div>
 	);
 };
