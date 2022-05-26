@@ -33,6 +33,7 @@ const injectContext = PassedComponent => {
 			state.actions.DragonsApi();
 			state.actions.MarsTwoApi();
 			state.actions.MarsOneApi();
+			state.actions.IssApi()
 			// <---- calling this function from the flux.js actions
 		}, []);
 

@@ -6,6 +6,7 @@ const getState = ({ getStore, getActions, setStore }) => {
 			nasaOneImageArray: [],
 			marsone: [],
 			marstwo: [],
+			issArray: [],
 
 		},
 		actions: {
@@ -74,6 +75,20 @@ const getState = ({ getStore, getActions, setStore }) => {
 					.then(data => {
 						console.log(data)
 						return setStore({ nasaOneImageArray: data })
+					})
+					.catch(err => {
+						console.error(err);
+					});
+			},
+			IssApi: () => {
+				fetch("https://api.wheretheiss.at/v1/satellites/25544", {
+				})
+					.then(response => {
+						return response.json();
+					})
+					.then(data => {
+						console.log(data)
+						return setStore({ issArray: data })
 					})
 					.catch(err => {
 						console.error(err);
