@@ -6,13 +6,13 @@ import { NasaOneImageCard } from "../component/nasaoneimagecard";
 export const NasaOneImageView = () => {
     const { store, actions } = useContext(Context);
     return (
-        <div>
+        <div className="bg-nasaoneimage">
 
             <div>
-                <h1>
-                    This all the rockets that spacex created
+                <h1 className="text-center text-white">
+                    INFORMATION FROM THE NASA
                 </h1>
-                <p>check what you want</p>
+
             </div>
             <NasaOneImageCard data={store.nasaOneImageArray} />
         </div>

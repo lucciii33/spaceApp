@@ -11,9 +11,9 @@ export const ImageOne = () => {
 		<Parallax className="image" blur={0} bgImage={image1} strength={400}>
 			<div className="align-baseline nav1 mt-2">
 				<a className="links m-2">rockets</a>
-				<a className="links m-2">satelites</a>
-				<a className="links m-2">rockets</a>
-				<a className="links m-2">satelites</a>
+				<a className="links m-2">Falcons</a>
+				<a className="links m-2">ISS</a>
+				<a className="links m-2">NASA</a>
 			</div>
 			<div className="d-grid m-0">
 				<div className="content d-grid ">

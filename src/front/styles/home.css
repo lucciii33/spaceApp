@@ -232,8 +232,20 @@ button1 {
   }
 }
 .oneimagenasa {
-  width: 1000px;
-  height: auto;
+  width: 900px;
+  height: 100vh;
+  margin-left: 300px;
+  border-radius: 25px;
+}
+.bg-nasaoneimage {
+  background-image: linear-gradient(
+    to right top,
+    #051937,
+    #004d7a,
+    #008793,
+    #00bf72,
+    #a8eb12
+  );
 }
 .map {
   width: 100%;

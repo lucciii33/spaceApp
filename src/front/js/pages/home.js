@@ -9,6 +9,7 @@ import { TextBox } from "../component/textbox";
 import { ImageThree } from "../component/imagethree";
 import { ImageFour } from "../component/imagefour";
 import { TextBoxTwo } from "../component/textboxtwo";
+import { TextBoxTre } from "../component/textboxtre";
 
 export const Home = () => {
 	const { store, actions } = useContext(Context);
@@ -20,7 +21,7 @@ export const Home = () => {
 			<ImageTwo />
 			<TextBoxTwo />
 			<ImageFour />
-			<TextBox />
+			<TextBoxTre />
 			<ImageThree />
 		</div>
 	);
