@@ -21,6 +21,10 @@ export const RocketsView = ({ data }) => {
                     value1: rocket.flickr_images[1],
                     value2: rocket.company,
                     value3: rocket.name,
+                    value4: rocket.flickr_images[0],
+                    value5: rocket.flickr_images[2]
+
+
                 }}
                     key={index}
                 />)}

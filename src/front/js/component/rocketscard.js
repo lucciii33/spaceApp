@@ -16,11 +16,11 @@ export const RocketCard = ({ data }) => {
                     <p className="card-text">{data.value3}</p>
                     <div className="d-flex justify-content-between m-1">
 
-                        {/* <Link to={{ pathname: "information/" + data.name, state: data }} className="text-decoration-none">
+                        <Link to={{ pathname: "information/" + data.name, state: data }} className="text-decoration-none">
                             <button className="button-24 ">
                                 See Instructions
                             </button>
-                        </Link> */}
+                        </Link>
                     </div>
                 </div>
             </div>

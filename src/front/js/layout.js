@@ -24,6 +24,7 @@ import { MapView } from "./pages/mapview.js";
 import { Navbar } from "./component/navbar";
 import { Footer } from "./component/footer";
 import { RocketsView } from "./pages/rocketsview";
+import { Information } from "./pages/informationRockets";
 
 //create your first component
 const Layout = () => {
@@ -58,6 +59,7 @@ const Layout = () => {
             <Route exact path="/single/:theid">
               <Single />
             </Route>
+            <Route exact path="/information/:name" component={Information} />
             <Route exact path="/dragonsview">
               <DragonsView />
             </Route>
