@@ -6,11 +6,35 @@ import { defaultProps } from "google-map-react";
 import GoogleMapReact from "google-map-react";
 import { LocationMarket } from "./locationmarket";
 
-export const Map = ({ center, zoom }) => {
 
+
+export const Map = (props) => {
+
+ 
   const { store, actions } = useContext(Context);
+
+  useEffect(() => {
+ 
+    actions.IssApi()
+   
+   }, []);
+
+  
+
   const params = useParams();
-  return (
+
+const  center = {
+      lat: store.issArray.latitude,
+      lng: store.issArray.longitude,
+    }
+
+console.log(center)
+
+const zoom = 4
+return center.lat == undefined ? (
+  "loading"
+) : (
+    
     <div className="map">
       <GoogleMapReact
         bootstrapURLKeys={{ key: "AIzaSyDpH1Rq_Gh0_B7nT9sUuc8VQWKNTXKFAbY" }}
@@ -23,14 +47,14 @@ export const Map = ({ center, zoom }) => {
   );
 };
 
-Map.defaultProps = {
-  center: {
-    lat: 42.3265,
-    lng: -122.8756,
-  },
-  zoom: 4,
-};
+// Map.defaultProps = {
+//   center: {
+//     lat: 42.3265,
+//     lng: -122.8756,
+//   },
+//   zoom: 4,
+// };
 
-Map.propTypes = {
-  match: PropTypes.object,
-};
+// Map.propTypes = {
+//   match: PropTypes.object,
+// };

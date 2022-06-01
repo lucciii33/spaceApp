@@ -6,7 +6,7 @@ const getState = ({ getStore, getActions, setStore }) => {
 			nasaOneImageArray: [],
 			marsone: [],
 			marstwo: [],
-			issArray: [],
+			issArray: {},
 
 		},
 		actions: {
