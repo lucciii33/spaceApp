@@ -25,8 +25,8 @@ export const Information = ({ data }) => {
                 <div>
                     <img src={data.value5} className="imagerockets"></img>
                 </div>
-                <div className="mt-5 m-3">
-                    <h2>contry:{data.value9}</h2>
+                <div className="mt-5 m-3 pt-5">
+                    <h2>{data.value9}</h2>
                     <p>cost per lanch:{data.value7}</p>
                     <p>mass:{data.value8}</p>
                 </div>
@@ -34,9 +34,10 @@ export const Information = ({ data }) => {
 
             <div className="d-flex rocketleft">
 
-                <div className="mt-5 m-3">
-                    <p>diameter (feet): {data.value10}</p>
-                    <p>diameter (meters):{data.value11}</p>
+                <div className="mt-5 m-3 ms-5">
+                    <h2>diameter</h2>
+                    <p> feet: {data.value10}</p>
+                    <p>meters: {data.value11}</p>
                 </div>
                 <div>
                     <img src={data.value4} className="imagerockets"></img>
