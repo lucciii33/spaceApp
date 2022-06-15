@@ -22,7 +22,13 @@ export const RocketsView = ({ data }) => {
                     value2: rocket.company,
                     value3: rocket.name,
                     value4: rocket.flickr_images[0],
-                    value5: rocket.flickr_images[2]
+                    value5: rocket.flickr_images[2],
+                    value6: rocket.description,
+                    value7: rocket.cost_per_launch,
+                    value8: rocket.mass.kg,
+                    value9: rocket.country,
+                    value10: rocket.diameter.feet,
+                    value11: rocket.diameter.meters,
 
 
                 }}

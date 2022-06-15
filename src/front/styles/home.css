@@ -257,3 +257,10 @@ button1 {
   height: 80px;
   color: red;
 }
+.imagerockets {
+  width: 700px;
+  height: 600px;
+}
+.rocketleft {
+  margin-left: 470px;
+}

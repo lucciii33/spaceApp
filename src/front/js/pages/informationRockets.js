@@ -9,10 +9,45 @@ export const Information = ({ data }) => {
     var data = useLocation().state;
     return (
         <div className="container">
-            <p>funciona{data.value3}</p>
-            <img src={data.value1}></img>
-            <img src={data.value4}></img>
-            <img src={data.value5}></img>
+            <div className="d-flex">
+                <div className="mt-5 m-3">
+                    <h2>{data.value3}</h2>
+                    <p>{data.value6}</p>
+                    <p>{data.value2}</p>
+                </div>
+                <div>
+                    <img src={data.value1} className="imagerockets"></img>
+                </div>
+            </div>
+
+            <div className="d-flex">
+
+                <div>
+                    <img src={data.value5} className="imagerockets"></img>
+                </div>
+                <div className="mt-5 m-3">
+                    <h2>contry:{data.value9}</h2>
+                    <p>cost per lanch:{data.value7}</p>
+                    <p>mass:{data.value8}</p>
+                </div>
+            </div>
+
+            <div className="d-flex rocketleft">
+
+                <div className="mt-5 m-3">
+                    <p>diameter (feet): {data.value10}</p>
+                    <p>diameter (meters):{data.value11}</p>
+                </div>
+                <div>
+                    <img src={data.value4} className="imagerockets"></img>
+                </div>
+
+            </div>
+
+
+
+
+
         </div>
     );
 };

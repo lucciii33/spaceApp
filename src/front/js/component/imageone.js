@@ -10,10 +10,11 @@ export const ImageOne = () => {
 	return (
 		<Parallax className="image" blur={0} bgImage={image1} strength={400}>
 			<div className="align-baseline nav1 mt-2">
-				<a className="links m-2">rockets</a>
-				<a className="links m-2">Falcons</a>
-				<a className="links m-2">ISS</a>
-				<a className="links m-2">NASA</a>
+				<Link className="text-decoration-none" to="/"><a className="links m-2">rockets</a></Link>
+				<Link className="text-decoration-none" to="/"><a className="links m-2">Falcons</a></Link>
+				<Link className="text-decoration-none" to="/"><a className="links m-2">ISS</a></Link>
+				<Link className="text-decoration-none" to="/"><a className="links m-2">NASA</a></Link>
+				<Link className="text-decoration-none" to="/"><a className="links m-2">Mars</a></Link>
 			</div>
 			<div className="d-grid m-0">
 				<div className="content d-grid ">
