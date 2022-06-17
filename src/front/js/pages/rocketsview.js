@@ -29,6 +29,12 @@ export const RocketsView = ({ data }) => {
                     value9: rocket.country,
                     value10: rocket.diameter.feet,
                     value11: rocket.diameter.meters,
+                    value12: rocket.first_stage.burn_time_sec,
+                    value13: rocket.first_stage[1],
+                    value14: rocket.first_stage.fuel_amount_tons,
+                    value15: rocket.height.feet,
+                    value16: rocket.height.meters,
+                    value17: rocket.first_flight
 
 
                 }}
